@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_firebase_task_manager/features/auth/presentation/pages/auth_gate.dart';
 import 'package:provider/provider.dart';
 
-import 'features/auth/data/auth_repository_impl.dart';
-import 'features/auth/domain/repositories/auth_repository.dart';
-import 'features/auth/presentation/providers/auth_provider.dart';
-import 'features/tasks/data/task_repository_impl.dart'; // আপনার ইমপ্লিমেন্টেশন ফাইলটি ইমপোর্ট করুন
-import 'features/tasks/domain/repositories/task_repositories.dart';
-import 'features/tasks/presentation/providers/task_provider.dart';
+import '../features/auth/data/auth_repository_impl.dart';
+import '../features/auth/domain/repositories/auth_repository.dart';
+import '../features/auth/presentation/providers/auth_provider.dart';
+import '../features/tasks/data/task_repository_impl.dart';
+import '../features/tasks/domain/repositories/task_repositories.dart';
+import '../features/tasks/presentation/providers/task_provider.dart';
+import 'app_routes.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -44,8 +45,9 @@ class _MyAppState extends State<MyApp> {
         ),
       ],
       child: MaterialApp(
+        initialRoute: AuthGate.name,
+        onGenerateRoute: AppRoutes.routes,
         debugShowCheckedModeBanner: false,
-        home: const AuthGate(),
       ),
     );
   }

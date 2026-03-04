@@ -7,7 +7,7 @@ import 'login_page.dart';
 
 class AuthGate extends StatelessWidget {
   const AuthGate({super.key});
-
+  static const String name ='/auth-gate';
   @override
   Widget build(BuildContext context) {
     return Consumer<AuthProvider>(

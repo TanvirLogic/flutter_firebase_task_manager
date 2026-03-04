@@ -8,7 +8,7 @@ import '../widgets/task_tile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
-
+  static const String name ='/home';
   @override
   State<HomePage> createState() => _HomePageState();
 }
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: const TaskListSection(),
+      body: SingleChildScrollView(child: const TaskListSection()),
       floatingActionButton: const AddTaskButton(),
     );
   }
