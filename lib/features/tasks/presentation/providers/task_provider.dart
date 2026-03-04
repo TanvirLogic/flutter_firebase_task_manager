@@ -49,4 +49,25 @@ class TaskProvider with ChangeNotifier {
   Future<void> deleteTask(String uid, String taskId) async {
     await _repository.deleteTask(uid, taskId);
   }
+
+  Future<void> updateTask(
+    String uid,
+    String taskId,
+    String newTitle,
+    String newDescription,
+  ) async {
+    // Find the existing task to preserve its other properties (like createdAt and isCompleted)
+    final existingTask = _tasks.firstWhere((t) => t.id == taskId);
+
+    await _repository.updateTask(
+      uid,
+      Task(
+        id: taskId,
+        title: newTitle,
+        description: newDescription,
+        isCompleted: existingTask.isCompleted,
+        createdAt: existingTask.createdAt,
+      ),
+    );
+  }
 }
