@@ -13,7 +13,7 @@ TaskFlow is a robust, production-ready task management application built with Fl
 
 You can download the latest production build (stable) directly for manual testing:
 
-[<img src="https://img.shields.io/badge/Download-Android%20APK-00C853?style=for-the-badge&logo=android&logoColor=white" />]([sha256:5f19647dd4ab877af70aa054ecbf1dc7645e2f96704fdcbbf8b2e653baab50fb](https://github.com/TanvirLogic/Firebase-Task-Manager-Clean-Architecture-Flutter-App/releases/download/engineering/app-release.apk))
+[<img src="https://img.shields.io/badge/Download-Android%20APK-00C853?style=for-the-badge&logo=android&logoColor=white" />](https://github.com/TanvirLogic/Firebase-Task-Manager-Clean-Architecture-Flutter-App/releases/download/engineering/app-release.apk)
 
 ---
 
