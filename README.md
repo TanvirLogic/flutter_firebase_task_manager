@@ -1,4 +1,4 @@
-# 📋 TaskFlow: Enterprise Task Management Solution
+# 📋 Task Manager: Enterprise Task Management Solution
 
 [![Flutter](https://img.shields.io/badge/Flutter-v3.24+-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
 [![Firebase](https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com)
