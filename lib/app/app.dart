@@ -24,22 +24,22 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        // ১. Auth Repository
+
         Provider<AuthRepository>(
           create: (_) => AuthRepositoryImpl(FirebaseAuth.instance),
         ),
 
-        // ২. Task Repository (এটি আপনার কোডে মিসিং ছিল)
+
         Provider<TaskRepository>(
           create: (_) => TaskRepositoryImpl(FirebaseFirestore.instance),
         ),
 
-        // ৩. Auth Provider (নির্ভর করে AuthRepository-এর ওপর)
+
         ChangeNotifierProvider(
           create: (context) => AuthProvider(context.read<AuthRepository>()),
         ),
 
-        // ৪. Task Provider (নির্ভর করে TaskRepository-এর ওপর)
+
         ChangeNotifierProvider(
           create: (context) => TaskProvider(context.read<TaskRepository>()),
         ),
