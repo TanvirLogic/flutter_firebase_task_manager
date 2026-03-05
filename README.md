@@ -1,4 +1,4 @@
-# 📋 TaskFlow: Enterprise Task Management Solution
+# 📋 Task Manager: Enterprise Task Management Solution
 
 [![Flutter](https://img.shields.io/badge/Flutter-v3.24+-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
 [![Firebase](https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com)
@@ -13,7 +13,7 @@ TaskFlow is a robust, production-ready task management application built with Fl
 
 You can download the latest production build (stable) directly for manual testing:
 
-[<img src="https://img.shields.io/badge/Download-Android%20APK-00C853?style=for-the-badge&logo=android&logoColor=white" />](https://github.com/TanvirLogic/Firebase-Task-Manager-Clean-Architecture-Flutter-App/releases/download/engineering/app-release.apk)
+[<img src="https://img.shields.io/badge/Download-Android%20APK-00C853?style=for-the-badge&logo=android&logoColor=white" />](https://github.com/TanvirLogic/Firebase-Task-Manager-Clean-Architecture-Flutter-App/releases/download/engineering/task_manager_v1.apk)
 
 ---
 
